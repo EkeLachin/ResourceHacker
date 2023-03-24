@@ -22,3 +22,10 @@ Additional features of Resource Hacker's compiler include: The #INCLUDE directiv
 Compiler error messages are reported, even errors nested within INCLUDE statements ...
 <img src="https://raw.githubusercontent.com/EkeLachin/ResourceHackerimg/main/resim_2023-03-24_122758432.png">
 
+# Viewing and Editing Resources:
+Once a resource file has been opened, its resources will generally be displayed as either an image (or group of images) or as decompiled text. Binary resources, usually images, can't be edited directly with Resource Hacker, but they can still be very easily exported and imported once they've been modified by an external image editor. (I see no benefit in duplicating what third-party image editors do so well.)
+<img src="https://raw.githubusercontent.com/EkeLachin/ResourceHackerimg/main/resim_2023-03-24_123140337.png">
+
+<img src="https://raw.githubusercontent.com/EkeLachin/ResourceHackerimg/main/resim_2023-03-24_123357657.png">
+
+
