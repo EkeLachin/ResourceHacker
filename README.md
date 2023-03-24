@@ -69,4 +69,6 @@ If this switch is omitted, the log will be written to resourcehacker.log`|
 |Help          |`options - command-line or script (always logged to CONSOLE) other switches are ignored.`|
 
 # Notes:
-hlelp
+- Switch identifiers (except -script) may be abbreviated down to a single char (eg -res or -r).
+- Switch instructions do not have to be in any particular order.
+- File names that contain spaces must be enclosed within double quotes.
