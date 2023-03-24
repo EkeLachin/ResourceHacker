@@ -193,10 +193,13 @@ ResourceHacker.exe -script ScriptFile
 
 ### The above licence terms constitute "copyright management information" within the meaning of Section 1202 of Title 17 of the United States Code and must not be altered or removed from the licensed works. Their alteration or removal from the licensed works, and the distribution of licensed works without all the above licence terms in an unaltered way, may contravene Section 1202 and give rise civil and/or criminal consequences.
 
-# Download version 5.1.7: http://www.angusj.com/resourcehacker/#download
-**EXE install (2.9MB)** [http://www.angusj.com/resourcehacker/reshacker_setup.exe](http://www.angusj.com/resourcehacker/reshacker_setup.exe)
+# Download version 5.1.7: (Official Download) http://www.angusj.com/resourcehacker/#download
+**EXE install (2.9 MB)** [http://www.angusj.com/resourcehacker/reshacker_setup.exe](http://www.angusj.com/resourcehacker/reshacker_setup.exe)
 
-**ZIP install (3.0MB)** [http://www.angusj.com/resourcehacker/resource_hacker.zip](http://www.angusj.com/resourcehacker/resource_hacker.zip)
+**ZIP install (3.0 MB)** [http://www.angusj.com/resourcehacker/resource_hacker.zip](http://www.angusj.com/resourcehacker/resource_hacker.zip)
 
+# Download version (Alternative Download Link) 5.1.7:
+**SETUP EXE İnstall (2.9 MB)** [https://github.com/EkeLachin/ResourceHacker/raw/main/Setup%C4%B0nstall.exe](https://github.com/EkeLachin/ResourceHacker/raw/main/Setup%C4%B0nstall.exe)
+**ZİP İnstall (3.0 MB)** [https://github.com/EkeLachin/ResourceHacker/archive/refs/heads/main.zip](https://github.com/EkeLachin/ResourceHacker/archive/refs/heads/main.zip)
 # Changes in 5.1.7:
 - Bugfix: fixed broken Accelerator compiling
