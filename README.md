@@ -48,5 +48,21 @@ Command-line instructions are a combination of switch statements followed by swi
 |Save          |`usually a filename for the new or modified file, but can also be a folder when extracting multiple resources`            |
 |Resource          |`filename - contains a resource being added to the opened file.`|
 |Action          |`	action to be performed on the opened file`|
-|Resource          |`filename - contains a resource being added to the opened file.`|
-|Resource          |`filename - contains a resource being added to the opened file.`|
+- **Add** add a resource, but fails if it already exists
+- **Addoverwrite** add a resource, and overwriting if it already exists
+- **Addskip** add a resource, but skipping if it already exists
+- **Compile** compiles a resource script file (*.rc) to a binary resource file (*.res)
+- **Delete-** delete a resource
+- **Extract** extract a resource
+- **Modify** modify a resource
+- **changelanguage(langID)** changes the language of ALL resources
+- **Mask** resource mask Type,Name,Language commas are mandatory but each of Type, Name & Language are optional
+- **Log** Filename or **CONSOLE** or **NUL**
+CONSOLE can be abbreviated to **CON**
+Logs the details of the operation performed
+If this switch is omitted, the log will be written to *resourcehacker.log*
+|Script          |`filename - contains a multi-command script, NOT a resource script for more info: -help script`|
+|Help          |`options - command-line or script (always logged to CONSOLE) other switches are ignored.`|
+
+# Notes:
+hlelp
