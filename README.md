@@ -6,4 +6,4 @@ A freeware resource compiler &amp; decompiler for Windows® applications. http:/
 - Freeware - no nags, no ads and fully functional.
 - [Download](https://github.com/EkeLachin/ResourceHacker/archive/refs/heads/main.zip)
 # Overview
-Resource Hacker™ is a resource editor for 32bit and 64bit Windows® applications. It's both a **resource compiler** (for *.rc files), and a **decompiler** - enabling viewing and editing of resources in executables (*.exe; *.dll; *.scr; etc) and compiled resource libraries (*.res, *.mui). While Resource Hacker™ is primarily a GUI application, it also provides many options for compiling and decompiling resources from the command-line.
+Resource Hacker™ is a resource editor for 32bit and 64bit Windows® applications. It's both a **resource compiler** (for .rc files), and a **decompiler** - enabling viewing and editing of resources in executables (*.exe; *.dll; *.scr; etc) and compiled resource libraries (*.res, *.mui). While Resource Hacker™ is primarily a GUI application, it also provides many options for compiling and decompiling resources from the command-line.
