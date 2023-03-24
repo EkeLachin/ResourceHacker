@@ -77,6 +77,126 @@ If this switch is omitted, the log will be written to resourcehacker.log`|
 > **(using rh.exe instead of ResourceHacker.exe in places for brevity)**
 - reshack_help.bat:
 <code>
-  ResourceHacker.exe -help
+ResourceHacker.exe -help
 @pause  :: to see the console output before the CMD window closes.
   </code>
+  
+-reshack_compile_res_script.bat:
+<code>
+rh.exe -open .\in\resources.rc -save .\out\resources.res -action compile -log NUL
+</code>
+
+-reshack_add_icon_to_old.bat:
+<code>
+rh.exe -open old.exe -save new.exe -action addskip -res my.ico -mask ICONGROUP,MAINICON,
+</code>
+
+-reshack_extract_all_source_icons_to_icons_folder.bat:
+<code>
+rh.exe -open source.exe -save .\icons -action extract -mask ICONGROUP,, -log CON
+@pause
+</code>
+
+-reshack_extract_all_dialogs.bat:
+<code>
+rh.exe -open source.exe -save .\dialogs.rc -action extract -mask DIALOG,, -log rh.log
+</code>
+
+-reshack_execute_my_script.bat:
+<code>
+ResourceHacker.exe -script myscript.txt
+</code>
+
+# Resource Hacker™ Scripts:
+- Resource Hacker™ Scripts are executed from the command-line using the following syntax:
+<code>
+ResourceHacker.exe -script ScriptFile
+</code>
+
+- Resource Hacker™ Scripts are text files with the following format:
+<code>
+//comments are preceded by double slashes
+  [FILENAMES]
+  Open=
+  Save=
+  Log=
+  [COMMANDS]
+  //one or more of the following commands ...
+  -add          SourceFile, ResourceMask
+  -addskip      SourceFile, ResourceMask
+  -addoverwrite SourceFile, ResourceMask
+  -addoverwrite SourceFile, ResourceMask
+  -modify       SourceFile, ResourceMask
+  -extract      TargetFile or TargetFolder, ResourceMask
+  -delete       ResourceMask
+  -changelanguage(langID)
+</code>
+
+# Note: Filenames that include spaces must be enclosed within double quotes.
+## Resource Hacker™ Script examples:
+- rh_script_myprog_rus.txt
+<code>
+//This script deletes all Language Neutral (0)
+  //string-table, menu and dialog resource items
+  //in MyProg.exe before replacing them
+  //with Russian (1049) items...	
+  [FILENAMES]
+  Exe=    MyProg.exe
+  SaveAs= MyProg_Rus.exe
+  Log=    MyProg_Rus.log	
+  [COMMANDS]
+  -delete  MENU,,0
+  -delete  DIALOG,,0
+  -delete  STRINGTABLE,,0
+  -add     MyProg_Rus.res, MENU,,1049
+  -add     MyProg_Rus.res, DIALOG,,1049
+  -add     MyProg_Rus.res, STRINGTABLE,,1049
+</code>
+
+- rh_script_myprog_upd_images.txt
+<code>
+//This script updates 2 bitmaps and an
+  //icon in MyProg.exe ...	
+  [FILENAMES]
+  Exe=    MyProg.exe
+  SaveAs= MyProg_Updated.exe	
+  [COMMANDS]
+  -addoverwrite Bitmap128.bmp, BITMAP,128,
+  -addoverwrite Bitmap129.bmp, BITMAP,129,0
+  -addoverwrite MainIcon.ico, ICONGROUP,MAINICON,0
+</code>
+
+- rh_script_myprog_upd_all.txt
+<code>
+//This script replaces all resources
+  //in MyProg.exe with all the resources
+  //in MyProgNew.res	
+  [FILENAMES]
+  Exe=    MyProg.exe
+  SaveAs= MyProg_Updated.exe
+  [COMMANDS]
+  -delete  ,,,            //delete all resources before...
+  -add MyProgNew.res ,,,  //adding all the new resources
+</code>
+</code>
+
+# "Packed" or "Compressed" Executables:
+### Some executable files are "packed" or "compressed" using compression algorithms. Not only does this reduces file size, it also makes viewing and modifying resources marginally more difficult. I suspect that this resource 'hiding' is (or was) a common objective in this process. Anyhow, in deference to these authors, I've chosen not to unpack files with Resource Hacker. As a side note, it seems that "packed" executables have become quite uncommon over the last 5-10 years, and software authors are exposing more rather than less information in executable resources. I suspect that earlier concerns about the loss of intellectual property with reverse engineering have been allayed.
+
+# Licence to Use - Terms and Conditions:
+### This Resource HackerTM software is released as freeware provided that you agree to the following terms and conditions:
+- This software is not to be distributed via any website domain or any other media without the prior written approval of the copyright owner.
+- This software is not to be used in any way to illegally modify software.
+
+# DISCLAIMER:
+### A user of this Resource HackerTM software acknowledges that he or she is receiving this software on an "as is" basis and the user is not relying on the accuracy or functionality of the software for any purpose. The user further acknowledges that any use of this software will be at the user's own risk and the copyright owner accepts no responsibility whatsoever arising from the use or application of the software.
+
+### The above licence terms constitute "copyright management information" within the meaning of Section 1202 of Title 17 of the United States Code and must not be altered or removed from the licensed works. Their alteration or removal from the licensed works, and the distribution of licensed works without all the above licence terms in an unaltered way, may contravene Section 1202 and give rise civil and/or criminal consequences.
+
+# Download version 5.1.7: http://www.angusj.com/resourcehacker/#download
+**EXE install (2.9MB)** [http://www.angusj.com/resourcehacker/reshacker_setup.exe](http://www.angusj.com/resourcehacker/reshacker_setup.exe)
+
+**ZIP install (3.0MB)** [http://www.angusj.com/resourcehacker/resource_hacker.zip](http://www.angusj.com/resourcehacker/resource_hacker.zip)
+
+# Changes in 5.1.7:
+- Bugfix: fixed broken Accelerator compiling
