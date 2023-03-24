@@ -72,3 +72,6 @@ If this switch is omitted, the log will be written to resourcehacker.log`|
 - Switch identifiers (except -script) may be abbreviated down to a single char (eg -res or -r).
 - Switch instructions do not have to be in any particular order.
 - File names that contain spaces must be enclosed within double quotes.
+
+# Batch file Examples > (using rh.exe instead of ResourceHacker.exe in places for brevity)
+dsdsd
