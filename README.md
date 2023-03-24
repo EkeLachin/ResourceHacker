@@ -59,7 +59,7 @@ Command-line instructions are a combination of switch statements followed by swi
 
 |Switch                |Parameter                          |
 |----------------|-------------------------------|
-|Mask          |`resource mask - Type,Name,Language commas are mandatory but each of Type, Name & Language are optional`|
+|Mask          |`resource mask - Type,Name,Language <br> commas are mandatory but each of Type, Name & Language are optional`|
 |Log          |`Filename or CONSOLE or NUL CONSOLE can be abbreviated to CON Logs the details of the operation performed If this switch is omitted, the log will be written to resourcehacker.log`|
 |Script          |`filename - contains a multi-command script, NOT a resource script for more info: -help script`|
 |Help          |`options - command-line or script (always logged to CONSOLE) other switches are ignored.`|
