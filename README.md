@@ -28,4 +28,22 @@ Once a resource file has been opened, its resources will generally be displayed 
 
 <img src="https://raw.githubusercontent.com/EkeLachin/ResourceHackerimg/main/resim_2023-03-24_123357657.png">
 
+# Menu and Dialog resource types have their own WYSIWYG designers:
+<img src="https://raw.githubusercontent.com/EkeLachin/ResourceHackerimg/main/resim_2023-03-24_123658372.png">
+<img src="https://raw.githubusercontent.com/EkeLachin/ResourceHackerimg/main/resim_2023-03-24_123946881.png">
 
+# Binary resources that have unknown formats will be displayed as read-only binary text. (Any resource can also be viewed in this fashion if desired.)
+<img src="https://raw.githubusercontent.com/EkeLachin/ResourceHackerimg/main/resim_2023-03-24_124136287.png">
+
+# Other Actions:
+<img src="https://raw.githubusercontent.com/EkeLachin/ResourceHackerimg/main/resim_2023-03-24_124300283.png">
+
+# Command Line Syntax:
+Just about all the functionality of Resource Hacker™ can be accessed from the command line without having to open the Resource Hacker™ GUI.
+Command line instructions and Resource Hacker™ scripts can remove the drudgery entailed with repeating Resource Hacker™ tasks.
+Command-line instructions are a combination of switch statements followed by switch parameters as explained in the following table: **Command line statements:**
+|Switch                |Parameter                          |
+|----------------|-------------------------------|
+|open|`'filename - the name of the file that is to be modified. It should be a Windows PE file (*.exe, *.dll etc) or a compiled or uncompiled resouce file (*.res or *.rc)'`            |
+|Quotes          |`"Isn't this fun?"`            |
+|Dashes          |`-- is en-dash, --- is em-dash`|
