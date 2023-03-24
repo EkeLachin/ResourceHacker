@@ -57,6 +57,8 @@ Command-line instructions are a combination of switch statements followed by swi
 - **Modify** modify a resource
 - **changelanguage(langID)** changes the language of ALL resources
 
+|Switch                |Parameter                          |
+|----------------|-------------------------------|
 |Mask          |`resource mask - Type,Name,Language
 commas are mandatory but each of Type, Name & Language are optional`|
 |Log          |`Filename or CONSOLE or NUL
