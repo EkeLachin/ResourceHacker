@@ -200,6 +200,8 @@ ResourceHacker.exe -script ScriptFile
 
 # Download version (Alternative Download Link) 5.1.7:
 **SETUP EXE İnstall (2.9 MB)** [https://github.com/EkeLachin/ResourceHacker/raw/main/Setup%C4%B0nstall.exe](https://github.com/EkeLachin/ResourceHacker/raw/main/Setup%C4%B0nstall.exe)
+
+
 **ZİP İnstall (3.0 MB)** [https://github.com/EkeLachin/ResourceHacker/archive/refs/heads/main.zip](https://github.com/EkeLachin/ResourceHacker/archive/refs/heads/main.zip)
 # Changes in 5.1.7:
 - Bugfix: fixed broken Accelerator compiling
