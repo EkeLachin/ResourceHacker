@@ -15,7 +15,7 @@ Resource Hacker™ is a resource editor for 32bit and 64bit Windows® applicatio
 # Compiling:
 Compiling can be initiated either by opening an existing resource script file, or by creating one from scratch using Resource Hacker's editor.
 
-A complete list of Resource-Definition Statements can be found [here.] (https://msdn.microsoft.com/en-us/library/windows/desktop/aa381043(v=vs.85).aspx)
+A complete list of Resource-Definition Statements can be found [here](https://msdn.microsoft.com/en-us/library/windows/desktop/aa381043(v=vs.85).aspx)
 
 Additional features of Resource Hacker's compiler include: The #INCLUDE directive (to access definition statements in header files etc) can be nested to multiple levels, as can the #IF, and #IFDEF directives. #DEFINE, #UNDEF, #IF, #ELIF, #ELSE, #IFDEF, #IFNDEF, #INCLUDE, and #PRAGMA directives are all supported. Strings, between double-quote (") characters, may contain typical 'C' style backslashed 'escaped' characters — \t , \n , \\ , \" , \x, \u and \377 (octal). A double-quote within a string must be 'escaped' using either a preceding backslash or with another double-quote. Script comments are preceded either by double forward-slashes (//) or by a semi-colon (;). Filenames with relative paths are allowed. Filenames that contain spaces must be enclosed within double-quote characters.
 
