@@ -73,5 +73,10 @@ If this switch is omitted, the log will be written to resourcehacker.log`|
 - Switch instructions do not have to be in any particular order.
 - File names that contain spaces must be enclosed within double quotes.
 
-# Batch file Examples > (using rh.exe instead of ResourceHacker.exe in places for brevity)
-dsdsd
+# Batch file Examples
+> **(using rh.exe instead of ResourceHacker.exe in places for brevity)**
+- reshack_help.bat:
+<code>
+  ResourceHacker.exe -help
+@pause  :: to see the console output before the CMD window closes.
+  </code>
