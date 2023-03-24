@@ -44,6 +44,9 @@ Command line instructions and Resource Hacker™ scripts can remove the drudgery
 Command-line instructions are a combination of switch statements followed by switch parameters as explained in the following table: **Command line statements:**
 |Switch                |Parameter                          |
 |----------------|-------------------------------|
-|open|`'filename - the name of the file that is to be modified. It should be a Windows PE file (*.exe, *.dll etc) or a compiled or uncompiled resouce file (*.res or *.rc)'`            |
-|Quotes          |`"Isn't this fun?"`            |
-|Dashes          |`-- is en-dash, --- is em-dash`|
+|Open|`'filename - the name of the file that is to be modified. It should be a Windows PE file (*.exe, *.dll etc) or a compiled or uncompiled resouce file (*.res or *.rc)'`            |
+|Save          |`usually a filename for the new or modified file, but can also be a folder when extracting multiple resources`            |
+|Resource          |`filename - contains a resource being added to the opened file.`|
+|Action          |`	action to be performed on the opened file`|
+|Resource          |`filename - contains a resource being added to the opened file.`|
+|Resource          |`filename - contains a resource being added to the opened file.`|
